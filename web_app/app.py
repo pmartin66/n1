@@ -36,10 +36,10 @@ table = 'employee';
 
 # Define the supported color codes
 bg_codes = {
-    "set1": "https://background-storage.s3.amazonaws.com/pexels-photo-6037011.jpeg",
-    "set2": "https://background-storage.s3.amazonaws.com/images+(1).jfif",
-    "set3": "https://background-storage.s3.amazonaws.com/images+(2).jfif",
-    "set4": "https://background-storage.s3.amazonaws.com/images.jfif",
+    "set1": "https://s3bucker2.s3.amazonaws.com/3840x2160-Images-Free-Download.jpg",
+    "set2": "https://s3bucker2.s3.amazonaws.com/OIP+(2).jpg",
+    "set3": "https://s3bucker2.s3.amazonaws.com/R.jpg",
+    "set4": "https://s3bucker2.s3.amazonaws.com/thumb-1920-775152.jpg",
 
 }
 
