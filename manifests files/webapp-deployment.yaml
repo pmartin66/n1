@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: webapp
+  labels:
+    app: employees
+spec:
+  selector:
+    matchLabels:
+      app: employees
+  replicas: 1    
+  template:
+    metadata:
+      labels:
+        app: employees
+    spec:
+      containers:
+      - image: 467336339185.dkr.ecr.us-east-1.amazonaws.com/my_app:v2.1.18
+        name: app-con
+        ports:
+          - containerPort: 81
+        env:
+        - name: 
+          valueFrom:
+            configMapKeyRef:
+                name: webapp-config
+                key: image_url        
+        envFrom:
+          - secretRef:
+             name: mysql-secrets
+        env:
+          - name: MYNAME
+            valueFrom:
+              configMapKeyRef: 
+                  name: webapp-config
+                  key:  myname

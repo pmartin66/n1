@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: webapp-config
+data:
+  myname:  Group-22
+  image_url: "https://s3bucker2.s3.amazonaws.com/3840x2160-Images-Free-Download.jpg"
