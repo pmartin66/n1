@@ -33,8 +33,9 @@ spec:
               name: mysql-secrets
               key: password
           - name: DBUSER
+            valueFrom:
             secretKeyRef:
-              name:  mysql-secrets
+              name: mysql-secrets
               key: user
           - name: MYSQL_ROOT_PASSWORD
             value: "pw"
